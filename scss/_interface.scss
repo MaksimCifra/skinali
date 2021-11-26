@@ -1,0 +1,32 @@
+body {
+    @include light;
+    color: $text-color;
+}
+
+.button {
+    padding: 25px 45px;
+    @include bold;
+    text-transform: uppercase;
+    color: #fff;
+    border: none;
+    background: $primary;
+
+}
+
+.button-o {
+    padding: 17px 22px;
+    font-size: 12px;
+    @include bold;
+    text-transform: uppercase;
+    color: $primary;
+    border: 2px solid $primary;
+    background: none;
+}
+
+@media (max-width: 576px) {
+
+    .button-o {
+        font-size: 10px;
+    }
+
+}
